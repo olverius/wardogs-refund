@@ -34,6 +34,26 @@ a:visited { color: #551a8b; }
   padding: 12px;
 }
 
+/* ---------- language bar ---------- */
+.lang-bar {
+  background: #c0c0c0;
+  border: 2px outset #fff;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.lang-bar select { font-size: 14px; }
+
+/* Chinese: SimSun, the most 2003 Chinese font there is */
+html[lang="zh"] body,
+html[lang="zh"] input, html[lang="zh"] select, html[lang="zh"] textarea {
+  font-family: "Times New Roman", SimSun, "宋体", "Songti SC", "Noto Serif CJK SC", serif;
+}
+
 /* ---------- header ---------- */
 .site-header { text-align: center; }
 .seal { width: 110px; height: 110px; }
