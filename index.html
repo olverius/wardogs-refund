@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Official WarDogs Refund Request Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<marquee class="top-marquee" scrollamount="6">REFUNDS ARE CURRENTLY BEING PROCESSED &#9733; PLEASE DO NOT REFRESH &#9733; YOUR CALL IS IMPORTANT TO US &#9733; ESTIMATED WAIT TIME: 4-6 BUSINESS CENTURIES &#9733; THANK YOU FOR CHOOSING WARDOGS &#9733;</marquee>
+
+<div class="page">
+
+  <header class="site-header">
+    <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+      <circle cx="60" cy="60" r="56" fill="#d4af37" stroke="#7a5c00" stroke-width="4"/>
+      <circle cx="60" cy="60" r="42" fill="#000080" stroke="#fff" stroke-width="2"/>
+      <polygon points="60,28 68,52 93,52 73,67 81,91 60,76 39,91 47,67 27,52 52,52" fill="#ffd700"/>
+      <text x="60" y="16" text-anchor="middle" font-size="9" font-family="Times New Roman" font-weight="bold" fill="#000">OFFICIAL</text>
+      <text x="60" y="113" text-anchor="middle" font-size="9" font-family="Times New Roman" font-weight="bold" fill="#000">SEAL OF REFUNDS</text>
+    </svg>
+    <h1 class="blink">OFFICIAL WARDOGS REFUND REQUEST PORTAL</h1>
+    <p class="subtitle"><i>Department of Customer Satisfaction &amp; Spite Management</i></p>
+  </header>
+
+  <hr class="rainbow">
+
+  <!-- ===================== SCREEN 1: THE FORM ===================== -->
+  <section id="screen-form">
+    <p class="notice comic">&#9888; IMPORTANT NOTICE &#9888;<br>All fields marked with <span class="req">*</span> are MANDATORY. All requests are reviewed by a qualified professional within 0-0 business days.</p>
+
+    <form id="refund-form" novalidate>
+      <table class="form-table">
+
+        <tr class="section-row"><th colspan="3">SECTION A &mdash; BASIC INFORMATION</th></tr>
+        <tr>
+          <td class="q-num">1.</td>
+          <td class="q-label"><label for="name">Full name <span class="req">*</span></label></td>
+          <td><input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+          <td class="q-num">2.</td>
+          <td class="q-label"><label for="steam">Steam username <span class="req">*</span></label></td>
+          <td><input type="text" id="steam" name="steam"></td>
+        </tr>
+        <tr>
+          <td class="q-num">3.</td>
+          <td class="q-label"><label for="purchaseDate">Date of purchase <span class="req">*</span></label></td>
+          <td><input type="date" id="purchaseDate" name="purchaseDate"></td>
+        </tr>
+        <tr>
+          <td class="q-num">4.</td>
+          <td class="q-label"><label for="hours">Total hours played <span class="req">*</span></label></td>
+          <td>
+            <input type="number" id="hours" name="hours" min="0" step="0.1">
+            <div id="hours-warning" class="warning" hidden></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="q-num">5.</td>
+          <td class="q-label"><label for="reason">Reason for refund request <span class="req">*</span></label></td>
+          <td>
+            <select id="reason" name="reason">
+              <option value="">-- Please select --</option>
+              <option>Game is bad</option>
+              <option>Didn't enjoy it</option>
+              <option>Technical issues</option>
+              <option>Spite</option>
+              <option>Olek is from Denmark</option>
+              <option>Other</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr class="section-row"><th colspan="3">SECTION B &mdash; GAMEPLAY INTERROGATION</th></tr>
+        <tr>
+          <td class="q-num">6.</td>
+          <td class="q-label"><label for="fun">How many of those hours were you actively having fun? <span class="req">*</span></label></td>
+          <td>
+            <input type="range" id="fun" name="fun" min="0" max="100" value="50">
+            <b><span id="fun-value">50</span>%</b>
+          </td>
+        </tr>
+        <tr>
+          <td class="q-num">7.</td>
+          <td class="q-label">Did you, at any point, say "one more round"? <span class="req">*</span></td>
+          <td>
+            <label><input type="radio" name="oneMore" value="yes"> Yes</label><br>
+            <label><input type="radio" name="oneMore" value="no"> No</label><br>
+            <label><input type="radio" name="oneMore" value="fifth"> I plead the fifth</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="q-num">8.</td>
+          <td class="q-label"><label for="favorite">Describe your favorite moment in the game <span class="req">*</span></label></td>
+          <td><textarea id="favorite" name="favorite" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td class="q-num">9.</td>
+          <td class="q-label"><label for="launches">How many times did you launch the game voluntarily, without being invited? <span class="req">*</span></label></td>
+          <td><input type="number" id="launches" name="launches" min="0" step="1"></td>
+        </tr>
+        <tr>
+          <td class="q-num">10.</td>
+          <td class="q-label"><label for="friend">Name the friend who forced you to play <span class="req">*</span></label></td>
+          <td>
+            <select id="friend" name="friend">
+              <option>Olek</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr class="section-row"><th colspan="3">SECTION C &mdash; LEGAL &amp; BUREAUCRATIC REQUIREMENTS</th></tr>
+        <tr>
+          <td class="q-num">11.</td>
+          <td class="q-label">Were you held at gunpoint during any of your playtime? <span class="req">*</span></td>
+          <td>
+            <label><input type="radio" name="gunpoint" value="yes"> Yes</label><br>
+            <label><input type="radio" name="gunpoint" value="no"> No</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="q-num">12.</td>
+          <td class="q-label"><label for="explanation">Please explain, in no fewer than 50 words, why 100 hours constitutes "not liking it" <span class="req">*</span></label></td>
+          <td>
+            <textarea id="explanation" name="explanation" rows="5"></textarea>
+            <div class="small">Word count: <b id="word-count">0</b> / 50</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="q-num">13.</td>
+          <td class="q-label">Have you considered that the problem might be you? <span class="req">*</span></td>
+          <td>
+            <label><input type="radio" name="problem" value="yes1"> Yes</label><br>
+            <label><input type="radio" name="problem" value="yes2"> Yes</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="q-num">14.</td>
+          <td class="q-label">Upload proof of suffering</td>
+          <td>
+            <button type="button" class="btn" id="upload-btn">Browse...</button>
+            <span class="small">No file chosen</span>
+            <div id="upload-msg" class="warning" hidden></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="q-num">15.</td>
+          <td class="q-label"><label for="honesty">Rate your honesty in this form from 1 to 10 <span class="req">*</span></label></td>
+          <td>
+            <select id="honesty" name="honesty">
+              <option value="">--</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+              <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr class="section-row"><th colspan="3">SECTION D &mdash; ADDITIONAL SECURITY QUESTIONS</th></tr>
+        <tr>
+          <td class="q-num">16.</td>
+          <td class="q-label"><label for="medyk">Medyk is? <span class="req">*</span></label></td>
+          <td>
+            <select id="medyk" name="medyk">
+              <option value="">-- Please select --</option>
+              <option>HERE!</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="q-num">17.</td>
+          <td class="q-label">
+            <b>Engineering competency check</b> <span class="req">*</span><br>
+            <span class="small">A rigid, insulated-on-three-sides tank contains 2 kg of air at 300 K and 100 kPa.
+            A paddle wheel does 50 kJ of work on the air, while 10 kJ of heat is lost through the uninsulated
+            wall to the surroundings at 290 K. Treating air as an ideal gas with c<sub>v</sub> = 0.718 kJ/kg&middot;K,
+            calculate the total entropy generated during this process in kJ/K.</span>
+          </td>
+          <td>
+            <input type="text" id="thermo" name="thermo" inputmode="decimal" placeholder="kJ/K">
+            <button type="button" class="btn" id="thermo-check">Check answer</button>
+            <div id="thermo-feedback"></div>
+            <button type="button" class="btn" id="thermo-hint" hidden>Give me a hint</button>
+            <div id="thermo-solution" class="solution" hidden>
+              <b>Official solution:</b><br>
+              &Delta;U = W &minus; Q<sub>out</sub> = 50 &minus; 10 = 40 kJ<br>
+              T<sub>2</sub> = 300 + 40 / (2 &times; 0.718) &asymp; 327.9 K<br>
+              &Delta;S<sub>air</sub> = 2 &times; 0.718 &times; ln(327.9 / 300) &asymp; 0.1275 kJ/K<br>
+              &Delta;S<sub>surr</sub> = 10 / 290 &asymp; 0.0345 kJ/K<br>
+              S<sub>gen</sub> = 0.1275 + 0.0345 &asymp; <b>0.162 kJ/K</b>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="q-num">18.</td>
+          <td class="q-label"><label for="cat">Cat has? <span class="req">*</span></label></td>
+          <td><input type="text" id="cat" name="cat"></td>
+        </tr>
+        <tr>
+          <td class="q-num">19.</td>
+          <td class="q-label"><label for="baca">Do you know a "Baca" joke? Write it or explain it below.</label></td>
+          <td><textarea id="baca" name="baca" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td class="q-num">20.</td>
+          <td class="q-label">What time are you filling out this form? <span class="req">*</span></td>
+          <td>
+            <input type="time" id="time" name="time"><br>
+            <label><input type="radio" name="timeMode" value="na stare"> na stare</label>
+            <label><input type="radio" name="timeMode" value="na nowe"> na nowe</label>
+          </td>
+        </tr>
+
+        <tr class="section-row"><th colspan="3">SECTION E &mdash; FINAL CONFIRMATION</th></tr>
+        <tr>
+          <td class="q-num">21.</td>
+          <td colspan="2"><label><input type="checkbox" name="ack1"> I acknowledge that I played this game for longer than some people's jobs <span class="req">*</span></label></td>
+        </tr>
+        <tr>
+          <td class="q-num">22.</td>
+          <td colspan="2"><label><input type="checkbox" name="ack2"> I understand that filing a false refund claim may result in being invited to play again <span class="req">*</span></label></td>
+        </tr>
+        <tr>
+          <td class="q-num">23.</td>
+          <td colspan="2">
+            <label><input type="checkbox" name="ack3"> I agree to the <a href="#" id="tos-link">Terms &amp; Conditions</a> <span class="req">*</span></label>
+            <div id="tos-box" class="tos-box" hidden></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3" class="submit-cell">
+            <button type="submit" class="btn btn-big">Submit (pointless)</button>
+            <button type="reset" class="btn">Reset</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </section>
+
+  <!-- ===================== SCREEN 2: LOADING ===================== -->
+  <section id="screen-loading" hidden>
+    <div class="dialog">
+      <div class="dialog-title">Processing Request...</div>
+      <div class="dialog-body">
+        <div class="hourglass" aria-hidden="true">&#8987;</div>
+        <h2 id="loading-heading">PROCESSING YOUR REQUEST</h2>
+        <div class="progress"><div id="progress-fill" class="progress-fill"></div></div>
+        <div class="progress-pct"><span id="progress-pct">0</span>%</div>
+        <p id="loading-status" class="status">Initializing...</p>
+        <p class="notice comic red">&#9888; PLEASE DO NOT CLOSE THIS WINDOW &#9888;<br>Do not press Back. Do not press F5. Do not breathe.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SCREEN 3: DENIED ===================== -->
+  <section id="screen-deny" hidden>
+    <div class="deny-box">
+      <div id="stamp" class="stamp">REQUEST DENIED</div>
+      <table class="case-table">
+        <tr><td><b>Case number:</b></td><td id="case-number"></td></tr>
+        <tr><td><b>Applicant:</b></td><td id="case-name"></td></tr>
+        <tr><td><b>Steam account:</b></td><td id="case-steam"></td></tr>
+        <tr><td><b>Status:</b></td><td class="red"><b>DENIED</b></td></tr>
+        <tr><td><b>Appeals filed:</b></td><td id="case-appeals">0</td></tr>
+      </table>
+
+      <p id="deny-intro"></p>
+
+      <h3><u>Official reasons for denial:</u></h3>
+      <ol id="deny-reasons"></ol>
+
+      <div class="note">
+        <b>A personal note from the Management:</b><br>
+        <!-- Edit this message however you like -->
+        <span id="deny-note"></span>
+      </div>
+
+      <p class="center">
+        <button type="button" class="btn btn-big" id="appeal-btn">Appeal this decision</button>
+      </p>
+    </div>
+  </section>
+
+  <hr class="rainbow">
+
+  <footer class="site-footer">
+    <p>You are visitor #<span id="counter" class="counter">000847</span></p>
+    <div class="badges">
+      <span class="badge b1">Best viewed in<br><b>Internet Explorer 6</b></span>
+      <span class="badge b2">800x600<br>recommended</span>
+      <span class="badge b3">&#128679; UNDER<br>CONSTRUCTION &#128679;</span>
+      <span class="badge b4">Made with<br><b>Notepad</b></span>
+      <span class="badge b5">Y2K<br>COMPLIANT</span>
+    </div>
+    <p class="small">&copy; 2003 WarDogs Refund Department. All rights reserved. No refunds reserved.<br>Last updated: 03/14/2003</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
